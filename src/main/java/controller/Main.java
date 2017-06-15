@@ -14,11 +14,8 @@ class Main {
     
     private void run() {
         view.addCreatePdfListener(event -> {
-            UserSettingsDto settings = view.getSettings();
             try {
-                new BoardsGenerator(settings.getNumberOfDataSets(), settings.getOutputFile(),
-                        settings.getLettersColor(), settings.getCommandsColor())
-                        .generateAndSavePdf();
+                BoardsGenerator.generateAndSavePdf(view.getSettings());
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }

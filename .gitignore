@@ -3,3 +3,5 @@
 build/
 gradle/
 src/test/java/SomePrivateTests.java
+src/main/resources/
+src/test/resources/

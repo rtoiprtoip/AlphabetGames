@@ -47,7 +47,7 @@ class PdfCreator {
             contentStream.setNonStrokingColor(letterColor);
             writeLetterRow(contentStream, LETTERS.substring(i, i + 5));
             contentStream.newLine();
-    
+            
             contentStream.setFont(FONT, COMMAND_SIZE);
             contentStream.setNonStrokingColor(commandColor);
             writeCommandsRow(contentStream, commandSet.substring(i, i + 5));
