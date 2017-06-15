@@ -4,6 +4,7 @@ import controller.UserSettingsDto;
 import lombok.Getter;
 
 import javax.swing.*;
+import java.io.File;
 
 class MainPanel {
     
@@ -15,11 +16,13 @@ class MainPanel {
     private JTextField color2Field;
     private JTextField noPagesField;
     private JButton chooseFileButton;
+    private JTextField fileNameField;
     
     UserSettingsDto getSettings() {
         int pages = Integer.parseInt(noPagesField.getText());
+        File file = new File(fileNameField.getText());
         return new UserSettingsDto(
-                pages, null, null, null
+                pages, file, null, null
         );
     }
 }
