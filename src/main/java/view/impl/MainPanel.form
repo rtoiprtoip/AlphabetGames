@@ -24,16 +24,11 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="9279f" class="javax.swing.JTextField" binding="color1Field">
+              <component id="4bcbb" class="javax.swing.JComboBox" binding="color1Field" custom-create="true">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties>
-                  <editable value="false"/>
-                  <text value="not working yet"/>
-                </properties>
+                <properties/>
               </component>
             </children>
           </grid>
@@ -73,16 +68,11 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="e3388" class="javax.swing.JTextField" binding="color2Field">
+              <component id="41626" class="javax.swing.JComboBox" binding="color2Field" custom-create="true">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties>
-                  <editable value="false"/>
-                  <text value="not working yet"/>
-                </properties>
+                <properties/>
               </component>
             </children>
           </grid>

@@ -5,7 +5,6 @@ import model.BoardsGenerator;
 import view.View;
 import view.impl.SwingView;
 
-import java.awt.*;
 import java.io.FileNotFoundException;
 
 @AllArgsConstructor
@@ -17,7 +16,8 @@ class Main {
         view.addCreatePdfListener(event -> {
             UserSettingsDto settings = view.getSettings();
             try {
-                new BoardsGenerator(settings.getNumberOfDataSets(), settings.getOutputFile(), Color.RED, Color.BLUE)
+                new BoardsGenerator(settings.getNumberOfDataSets(), settings.getOutputFile(),
+                        settings.getLettersColor(), settings.getCommandsColor())
                         .generateAndSavePdf();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
