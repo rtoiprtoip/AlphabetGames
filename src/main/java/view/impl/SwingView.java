@@ -11,7 +11,7 @@ public class SwingView implements View {
     private JFrame mainFrame;
     private MainPanel mainPanel;
     
-    public SwingView(){
+    public SwingView() {
         SwingUtilities.invokeLater(this::createAndShowGUI);
     }
     
@@ -27,8 +27,7 @@ public class SwingView implements View {
     
     @Override
     public UserSettingsDto getSettings() {
-        //TODO: auto-generated method stub
-        return null;
+        return mainPanel.getSettings();
     }
     
     @Override
@@ -39,8 +38,7 @@ public class SwingView implements View {
     
     @Override
     public void addCreatePdfListener(ActionListener listener) {
-        //TODO: auto-generated method stub
-        
+        SwingUtilities.invokeLater(() -> mainPanel.getOkButton().addActionListener(listener));
     }
     
     @Override
