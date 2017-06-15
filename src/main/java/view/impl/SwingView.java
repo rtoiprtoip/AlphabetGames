@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 public class SwingView implements View {
     
     private JFrame mainFrame;
+    private MainPanel mainPanel;
     
     public SwingView(){
         SwingUtilities.invokeLater(this::createAndShowGUI);
@@ -16,10 +17,11 @@ public class SwingView implements View {
     
     private void createAndShowGUI() {
         mainFrame = new JFrame();
+        mainPanel = new MainPanel();
+        
         mainFrame.setVisible(true);
-        mainFrame.setSize(500, 500);
         mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        mainFrame.setResizable(false);
+        mainFrame.add(mainPanel.getMainPanel());
         mainFrame.pack();
     }
     
